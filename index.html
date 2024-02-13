@@ -67,6 +67,7 @@
         <button onclick="showFlowers()">Yes</button>
         <button onclick="alert('Sorry, I can\'t.')" style="margin-left: 10px;">No</button>
         <div class="flowers" id="flowers">
+            <p id="valentineMessage" style="display:none;">Thank you for being my Valentine!🤍🤍🤍</p>
             <img src="./assets/bouquet.png" alt="flowers">
         </div>
     </div>
@@ -74,7 +75,7 @@
     <script>
         function showFlowers() {
             document.getElementById("flowers").style.display = "block";
-            document.getElementById("excitement").style.display = "inline";
+            document.getElementById("valentineMessage").style.display = "block";
         }
     </script>
 </body>
