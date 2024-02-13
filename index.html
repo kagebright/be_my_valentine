@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #857979;
+            text-align: center;
+        }
+        .container {
+            max-width: 100%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #d29f9f;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff4081;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        button {
+            background-color: #ff4081;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #d81b60;
+        }
+        .flowers {
+            display: none;
+            margin-top: 20px;
+        }
+        .flowers img {
+            max-width: 100%;
+            height: auto;
+        }
+        .valentine img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Valentine?</h1>
+        <p>Dear Sevy,</p>
+        <p>On this special day, I want to express my love for you and ask you a question that means the world to me: Will you be my Valentine?</p>
+        <p>With you, my life is perfect.</p>
+        <div class="valentine" id="valentine">
+            <img src="./assets/IMG_7487.jpg" alt="valentine">
+        </div>
+        
+        <button onclick="showFlowers()">Yes</button>
+        <button onclick="alert('Sorry, I can\'t.')" style="margin-left: 10px;">No</button>
+        <div class="flowers" id="flowers">
+            <img src="./assets/bouquet.png" alt="flowers">
+        </div>
+    </div>
+
+    <script>
+        function showFlowers() {
+            document.getElementById("flowers").style.display = "block";
+            document.getElementById("excitement").style.display = "inline";
+        }
+    </script>
+</body>
+</html>
